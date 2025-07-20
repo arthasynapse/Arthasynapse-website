@@ -1,0 +1,119 @@
+.magazines-hero {
+  /* background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%); */
+  background-color: #3674b5;
+  color: white;
+  padding: 6rem 0 4rem;
+  text-align: center;
+}
+
+.magazines-filter {
+  background-color: var(--bg);
+  padding: 2rem 0;
+  /* border-bottom: 1px solid #e2e8f0; */
+}
+
+.filter-tabs {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.filter-tab {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--bg);
+  border: 1px solid #565758;
+  border-radius: 25px;
+  color: #666;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.filter-tab:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+.filter-tab.active {
+  background-color: #2563eb;
+  border-color: #2563eb;
+  color: white;
+}
+
+.magazines-grid-section {
+  padding: 4rem 0;
+  background-color: var(--bg);
+}
+
+.magazines-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.no-magazines {
+  text-align: center;
+  padding: 4rem 0;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.magazines-cta {
+  background-color: #3674b5;
+  color: white;
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.cta-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .filter-tabs {
+    gap: 0.5rem;
+  }
+
+  .filter-tab {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .magazines-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
