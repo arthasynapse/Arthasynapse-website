@@ -8,10 +8,12 @@ const MagazineCard = ({ magazine }) => {
     }
   }
 
+  //  || "/placeholder.svg"
+
   return (
     <div className="magazine-card">
       <div className="magazine-image">
-        <img src={magazine.coverImage || "/placeholder.svg"} alt={magazine.title} />
+        <img src={magazine.coverImage} alt={magazine.title} />
         <div className="magazine-overlay">
           <button className="btn read-more-btn" onClick={handleReadMore}>
             Read More

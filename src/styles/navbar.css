@@ -1,5 +1,7 @@
 :root {
   --bg: #ffffff;
+  --blue: #6FE6FC;
+  --white: black;
 }
 
 /* Navbar container */
@@ -23,7 +25,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 5rem;
+  height: 3.5rem;
   /* padding: 0 1.5rem; */
 }
 
@@ -41,9 +43,9 @@
   height: 60px;
 }
 
-.nav-logo:hover {
+/* .nav-logo:hover {
   color: #1d4ed8;
-}
+} */
 
 /* Menu container */
 .nav-menu {
@@ -65,12 +67,13 @@
 
 .nav-link:hover {
   color: black;
-  background-color: #6FE6FC;
+  background-color: var(--blue);
+  color: var(--white);
 }
 
 .nav-link.active {
-  color: black;
-  background-color: #6FE6FC;
+  color: var(--white);
+  background-color: var(--blue);
 }
 
 /* Hamburger toggle (hidden on desktop) */
@@ -134,6 +137,6 @@
 }
 
 /* Add margin to body to avoid overlap */
-body {
-  margin-top: 80px;
-}
+/* body {
+  /* margin-top: 80px; */
+/* } */

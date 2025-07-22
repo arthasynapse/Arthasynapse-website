@@ -1,8 +1,16 @@
 "use client"
-
 import React from "react"
-import MagazineCard from "../components/MagazineCard"
 import "../styles/magazines.css"
+import MagazineCard from "../components/MagazineCard"
+import leader from '../assets/magazine/leaders.jpg'
+import innovation from '../assets/magazine/innovation.jpg'
+import social from '../assets/magazine/social.jpg'
+import women from '../assets/magazine/women.jpg'
+import tech from '../assets/magazine/tech.jpg'
+import doctor from "../assets/magazine/doctor.jpg"
+import planet from "../assets/magazine/planet.jpg"
+import education from "../assets/magazine/education.jpg"
+import cat from "../assets/magazine/cat.jpg"
 
 const Magazines = () => {
   const magazines = [
@@ -11,7 +19,7 @@ const Magazines = () => {
       title: "Leaders of Tomorrow",
       description:
         "Featuring inspiring stories of young entrepreneurs who are changing the world with their innovative ideas and determination. This issue highlights the next generation of business leaders.",
-      coverImage: "/placeholder.svg?height=300&width=250",
+      coverImage: leader,
       date: "December 2024",
       category: "Leadership",
       link: "#",
@@ -21,7 +29,7 @@ const Magazines = () => {
       title: "Innovation Chronicles",
       description:
         "Exploring breakthrough technologies and the visionaries behind them, shaping the future of various industries. From AI to sustainable energy solutions.",
-      coverImage: "/placeholder.svg?height=300&width=250",
+      coverImage: innovation,
       date: "November 2024",
       category: "Innovation",
       link: "#",
@@ -31,7 +39,7 @@ const Magazines = () => {
       title: "Social Impact Stories",
       description:
         "Highlighting changemakers who are making a difference in their communities and creating positive social impact through their dedicated work and initiatives.",
-      coverImage: "/placeholder.svg?height=300&width=250",
+      coverImage: social,
       date: "October 2024",
       category: "Social Impact",
       link: "#",
@@ -41,7 +49,7 @@ const Magazines = () => {
       title: "Women in Business",
       description:
         "Celebrating the achievements of women entrepreneurs and executives who are breaking barriers and creating new opportunities in the business world.",
-      coverImage: "/placeholder.svg?height=300&width=250",
+      coverImage: women,
       date: "September 2024",
       category: "Business",
       link: "#",
@@ -51,7 +59,7 @@ const Magazines = () => {
       title: "Tech Pioneers",
       description:
         "Meet the technology pioneers who are revolutionizing industries with their groundbreaking innovations and forward-thinking approaches to problem-solving.",
-      coverImage: "/placeholder.svg?height=300&width=250",
+      coverImage: tech,
       date: "August 2024",
       category: "Technology",
       link: "#",
@@ -61,7 +69,7 @@ const Magazines = () => {
       title: "Sustainable Future",
       description:
         "Exploring sustainable business practices and environmental initiatives that are creating a better future for our planet and future generations.",
-      coverImage: "/placeholder.svg?height=300&width=250",
+      coverImage: planet,
       date: "July 2024",
       category: "Sustainability",
       link: "#",
@@ -71,7 +79,7 @@ const Magazines = () => {
       title: "Creative Minds",
       description:
         "Showcasing artists, designers, and creative professionals who are pushing boundaries and redefining what's possible in their respective fields.",
-      coverImage: "/placeholder.svg?height=300&width=250",
+      coverImage: cat,
       date: "June 2024",
       category: "Creative",
       link: "#",
@@ -81,7 +89,7 @@ const Magazines = () => {
       title: "Healthcare Heroes",
       description:
         "Honoring healthcare professionals and medical innovators who are advancing patient care and medical research to improve lives worldwide.",
-      coverImage: "/placeholder.svg?height=300&width=250",
+      coverImage: doctor,
       date: "May 2024",
       category: "Healthcare",
       link: "#",
@@ -91,7 +99,7 @@ const Magazines = () => {
       title: "Education Revolution",
       description:
         "Featuring educators and edtech innovators who are transforming the way we learn and making education more accessible and effective for all.",
-      coverImage: "/placeholder.svg?height=300&width=250",
+      coverImage: education,
       date: "April 2024",
       category: "Education",
       link: "#",

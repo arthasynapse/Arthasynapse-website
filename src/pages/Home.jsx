@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom"
 import MagazineCard from "../components/MagazineCard"
 import "../styles/home.css"
+import leaders from "../assets/magazine/leaders.jpg"
+import innovation from "../assets/magazine/innovation.jpg"
+import social from "../assets/magazine/social.jpg"
+
 
 const Home = () => {
   const recentMagazines = [
@@ -9,7 +13,7 @@ const Home = () => {
       title: "Leaders of Tomorrow",
       description:
         "Featuring inspiring stories of young entrepreneurs who are changing the world with their innovative ideas and determination.",
-      coverImage: "/placeholder.svg?height=250&width=300",
+      coverImage: leaders,
       date: "December 2024",
       category: "Leadership",
       link: "#",
@@ -19,7 +23,7 @@ const Home = () => {
       title: "Innovation Chronicles",
       description:
         "Exploring breakthrough technologies and the visionaries behind them, shaping the future of various industries.",
-      coverImage: "/placeholder.svg?height=250&width=300",
+      coverImage: innovation,
       date: "November 2024",
       category: "Innovation",
       link: "#",
@@ -29,7 +33,7 @@ const Home = () => {
       title: "Social Impact Stories",
       description:
         "Highlighting changemakers who are making a difference in their communities and creating positive social impact.",
-      coverImage: "/placeholder.svg?height=250&width=300",
+      coverImage: social,
       date: "October 2024",
       category: "Social Impact",
       link: "#",

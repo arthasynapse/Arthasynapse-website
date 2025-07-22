@@ -1,1 +1,4 @@
 node_modules
+generate-context.js
+project-context.md
+.gitignore
