@@ -62,7 +62,6 @@ const Footer = () => {
                 <img src={gmailIcon} alt="Email" className="contact-icon" />
                 Arthasynapse@gmail.com
               </p>
-             
             </div>
           </div>
         </div>
