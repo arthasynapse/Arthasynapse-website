@@ -14,6 +14,7 @@
   background-position: center;
   background-repeat: no-repeat;
   /* background-blend-mode: multiply; */
+  
 }
 
 .hero::before {
@@ -40,6 +41,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  animation: slideUp 1s ease forwards;
 }
 
 .hero-title {
@@ -200,5 +202,16 @@
 
   .magazines-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

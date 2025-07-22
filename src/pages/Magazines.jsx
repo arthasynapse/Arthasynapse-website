@@ -11,6 +11,7 @@ import doctor from "../assets/magazine/doctor.jpg"
 import planet from "../assets/magazine/planet.jpg"
 import education from "../assets/magazine/education.jpg"
 import cat from "../assets/magazine/cat.jpg"
+import { Link } from "react-router-dom"
 
 const Magazines = () => {
   const magazines = [
@@ -118,10 +119,17 @@ const Magazines = () => {
     "Healthcare",
     "Education",
   ]
+
   const [selectedCategory, setSelectedCategory] = React.useState("All")
 
   const filteredMagazines =
-    selectedCategory === "All" ? magazines : magazines.filter((magazine) => magazine.category === selectedCategory)
+    selectedCategory === "All"
+      ? magazines
+      : magazines.filter((magazine) => magazine.category === selectedCategory)
+
+  const handleScrollAndNavigate = () => {
+    window.scrollTo(0, 0)
+  }
 
   return (
     <div className="magazines">
@@ -180,9 +188,9 @@ const Magazines = () => {
               making a positive impact.
             </p>
             <div className="cta-buttons">
-              <a href="/contact" className="btn">
+              <Link to="/contact" className="btn" onClick={handleScrollAndNavigate}>
                 Submit Your Story
-              </a>
+              </Link>
               <a href="mailto:Arthasynapse@gmail.com" className="btn btn-outline">
                 Contact Our Team
               </a>
