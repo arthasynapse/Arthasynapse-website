@@ -41,6 +41,9 @@ const Navbar = () => {
             <Link to="/magazines" className={`nav-link ${isActive("/magazines")}`} onClick={() => setIsMenuOpen(false)}>
               Magazines
             </Link>
+            <Link to="/blog" className={`nav-link ${isActive("/blog")}`} onClick={() => setIsMenuOpen(false)}>
+              Blogs
+            </Link>
             <Link to="/contact" className={`nav-link ${isActive("/contact")}`} onClick={() => setIsMenuOpen(false)}>
               Contact
             </Link>
